@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, intial-scale=1.0">
+ <tittle>Arithmetic</tittle>
+ <script>
+    function add (){
+   x=parseInt(f1.tb1.value)
+   y=parseInt(f1.tb2.value)
+   z=x+y
+   document.getElementById('tb3').value=z;
+    }
+    function sub(){
+      z = x-y
+      documwtn.getElementById('tb3').value=z;
+    }
+
+    function mul(){
+    z = x*y
+    document.getElementById('tb3').value=z;
+   
+    }
+
+    function div(){
+      z=x/y
+      document.getElementById('tb3').value=z;
+    }
+
+    function mod(){
+      z=x%y
+      document.getElementById('tb3').value=z;
+    }
+ </script>
+
+</head>
+<body>
+   <form id="f1">
+Enter 1st value:<input type="text"id="tb1"><br>
+Enter 2nd value :<input type="text" id="tb2"><br>
+<button type="button"onclick="add()">Addition</button>
+<button type="button"onclick="sub()">Subraction</button>
+<button type="button"onclick="mul()">Multiplication</button>
+<button type="button"onclick="div()">Division</button>
+<button type="button"onclick="mod()">MOdulo</button><br>
+Result<input type="text" id="tb3">
+   </form>
+   
+</body>
+</html>
