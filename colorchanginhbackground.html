@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button</title>
+</head>
+<body id="bg">
+    <h1 style="text-align:center"> Background Colour using Radio Button</h1>
+        <input type="radio" onclick="document.getElementById('bg').style.backgroundColor='pink';" name="bgcolor"> Pink
+        <input type="radio" onclick="document.getElementById('bg').style.backgroundColor='blue';" name="bgcolor"> Blue
+        <input type="radio" onclick="document.getElementById('bg').style.backgroundColor='purple';" name="bgcolor"> Purple
+    <h1 style="text-align:center"> Background Color using buttons</h1>  
+    <form style="text-align:center">
+        <input type="button" value="Pink" onclick="document.getElementById('bg').style.backgroundColor='pink';" name="bgcolor">
+        <input type="button" value="Blue" onclick="document.getElementById('bg').style.backgroundColor='blue';" name="bgcolor">
+        <input type="button" value="Purple" onclick="document.getElementById('bg').style.backgroundColor='purple';" name="bgcolor">
+    </form>
+</body>
+</html>
+
