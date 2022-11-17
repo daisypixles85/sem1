@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Message Box</title>
+<script>
+function alert1()
+{
+  var o;
+  o =(f1.tb1.value);
+  alert("Welcome " + o + " !");
+}  
+function prompt1()
+{
+  let text;
+ let person = prompt("Please enter your age:", "5");
+    text =  "Your age is " + person ;  
+  document.getElementById("2").innerHTML = text;    
+}
+function confirm1(){
+  n = (f1.tb3.value)
+  var num;
+  if (confirm("Press a button!")) {
+    num = "Your number is " + n;
+  } else {
+    num = "Your input was cancelled";
+  }
+  document.getElementById("3").innerHTML = num;
+}
+</script>
+ 
+</head>
+<body>
+    <form id="f1">
+        <label for="tb1"> Enter Name: </label><input type="txt" id="tb1">
+        <br>
+        <br>
+        <button type ="button" onclick="alert1()">Alert</button>
+        <br>
+        <br>
+        <br>
+        Enter Age: <p id="2"></p>
+        <br>
+        <button type="button" onclick="prompt1()">Prompt</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        Enter Phone Number: <input type="num" id="tb3"><p id="3"></p>
+        <br>
+        <button type="button" onclick="confirm1()">Confirm</button>
+    </form>
+</body>
+</html>
